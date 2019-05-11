@@ -1,4 +1,5 @@
 import setuptools
+# https://blog.ionelmc.ro/2014/06/25/python-packaging-pitfalls/
 
 setuptools.setup(# Needed to silence warnings (and to be a worthwhile package)
     name='vigilant-version',
@@ -10,7 +11,7 @@ setuptools.setup(# Needed to silence warnings (and to be a worthwhile package)
     # Needed for dependencies
     # install_requires=['numpy'],
     # *strongly* suggested for sharing
-    version='0.0.1',
+    version='0.0.2',
     # The license can be anything you like
     license='MIT',
     description='An example of a python package from pre-existing code',

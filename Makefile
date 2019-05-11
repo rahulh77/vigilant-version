@@ -54,11 +54,13 @@ package:
 	@$(VENV)/bin/python setup.py bdist_wheel
 
 dist:
+
 	@$(VENV)/bin/twine upload dist/*
 clean:
 	@rm -rf $(VENV)
 	@find . -name "*.pyc" -delete
 	@find . -name "*.pyo" -delete
 	@find . -name .coverage -delete
+	@rm -rf dist build *.egg-info
 
 .PHONY: init test lint dep package dist
