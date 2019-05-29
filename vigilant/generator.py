@@ -1,7 +1,6 @@
 """Module to generate random strings"""
 import string
 import random
-import uuid
 
 
 def random_string_digits(string_length=10):
